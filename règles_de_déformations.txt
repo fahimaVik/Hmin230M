@@ -1,0 +1,28 @@
+[V]
+$er -> $eur : Nom d'agent
+$er -> $ation : Forme nominale (Nom d'action)
+$er -> $ement : adverbe
+$er -> $age : Forme nominale (Nom d'action)
+$er -> dé$ : sémantique opposée
+$ire -> dés$ : sémantique opposée
+$er -> il$ : sémantique opposée
+$er -> ir$ : sémantique opposée
+$ire -> $iture : Forme nominale (Nom d'action)
+$ire -> $iction : Forme nominale (Nom d'action)
+$ire -> $iption : Forme nominale (Nom d'action)
+$aire -> $action : Forme nominale (Nom d'action)
+$uire -> $uction : Forme nominale (Nom d'action)
+[M]
+$al -> $ement : adverbe
+$er -> $ement : adverbe
+$er -> dé$ : sémantique opposée
+$ire -> dés$ : sémantique opposée
+$er -> il$ : sémantique opposée
+$er -> ir$ : sémantique opposée
+$ail -> $eaux : pluriel
+$al -> $aux : Adjectif pluriel
+$al -> $alement : adverbe
+$és -> $able : adverbe
+$s -> $ : singulier
+$isme -> $iste : Adjectif
+$ie -> $ique : Adjectif
