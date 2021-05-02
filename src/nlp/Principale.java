@@ -8,20 +8,20 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Principale {
-	static HashMap<String, ArrayList<String>> Regles_verbes = new HashMap <String, ArrayList<String>>();
-	static HashMap<String, ArrayList<String>> Regles_mots = new HashMap <String, ArrayList<String>>();
-	//static HashMap<String, ArrayList<String>> Regles_adj = new HashMap <String, ArrayList<String>>();
-	static HashMap<String, String> mots_generes= new HashMap <String, String>();
-	static HashMap<String, String> mots_retenus= new HashMap <String, String>();
-	static ArrayList<String> entrees = new ArrayList<String>();
+	static HashMap<String, ArrayList<String>> Regles_verbes = new HashMap <String, ArrayList<String>>(); //liste règles pour verbes
+	static HashMap<String, ArrayList<String>> Regles_mots = new HashMap <String, ArrayList<String>>();  //liste règles pour le reste des mots
+	//static HashMap<String, ArrayList<String>> Regles_adj = new HashMap <String, ArrayList<String>>(); 
+	static HashMap<String, String> mots_generes= new HashMap <String, String>();  //hasmap mot générés 
+	static HashMap<String, String> mots_retenus= new HashMap <String, String>();  //hashmap mot gardés
+	static ArrayList<String> entrees = new ArrayList<String>();   // liste des mots en entrée
 	
 	public static void main(String[] args) throws IOException {
 		
-		fetchEntrees();	
-		fetchRegles();
-		derivation();
-		verificationABU();
-		affichage();
+		fetchEntrees();		//methode cherche les donnée d'entrée et le ajoute dans l'arraylist entree	  
+		fetchRegles();		//methode 
+		derivation();		//methode 
+		verificationABU();	//methode 
+		affichage();		//methode 
 
 		}
 	
@@ -100,7 +100,7 @@ public class Principale {
 		}
 	}
 	public static void fetchEntrees() throws IOException{
-		BufferedReader buffer = Files.newBufferedReader(Paths.get("entrées.txt"), Charset.forName("UTF-8"));
+		BufferedReader buffer = Files.newBufferedReader(Paths.get("entrées.txt"), Charset.forName("UTF-8")); //mise en mémoire bfr using 
 		String tmp;
 		while ((tmp=buffer.readLine()) != null) {
 			entrees.add(tmp);
@@ -112,7 +112,7 @@ public class Principale {
 		String category = "";
 		String premisse = "";
 		String conclusion = "";
-		while ((tmp=buffer.readLine()) != null) {
+		while ((tmp=buffer.readLine()) != null) {    //partage en catégories verbes et mots
 			if (tmp.startsWith("[")){
 				if (tmp.equals("[V]")) {category = "[V]";}
 				if (tmp.equals("[M]")) {category = "[M]";}
